@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+
+    "version": "1.0",
+
+    "name": "Security Detector",
+
+    "description": "Get to know more about your security when using Firefox with Security Detector",
+
+    "browser_action": {
+
+        "browser_style": true,
+
+        "default_popup": "plugin.html",
+
+        "default_title": "Security Detector"
+
+    },
+
+    "icons": {
+        "64": "icons/dalle.png"
+    },
+
+    "content_scripts": [
+        {
+            "js": ["app.js"],
+            "matches": ["*://*/*"]
+        }
+    ],
+
+    "permissions": [
+        "cookies",
+        "tabs",
+        "storage",
+        "<all_urls>",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
