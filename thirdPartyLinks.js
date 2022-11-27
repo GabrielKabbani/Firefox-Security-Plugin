@@ -17,8 +17,8 @@ const showDomains = async(tabs) => {
     }
 
     let content = document.createTextNode(num_doms + " third party links in this page!");
-
     domnum.appendChild(content);
+    domnum.setAttribute("value", num_doms);
     
 };
 
@@ -32,4 +32,5 @@ function getActiveTab(){
 }
 
 getActiveTab().then(showDomains);
+
 
