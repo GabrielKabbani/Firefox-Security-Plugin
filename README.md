@@ -21,4 +21,4 @@ Para a construção deste plugin, foram necessários alguns procedimentos:
   1. Fazer um scrapping do HTML da página para ter acesso aos domínios de terceiros que estão ativos.
   2. Obtenção do local storage sendo utilizado no browser durante o acesso à página.
   3. Utilização da API Javascript para Firefox (https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies) que permite a obtenção dos cookies que foram injetados no carregamento da página. Estes cookies são então segregados entre 1st e 3rd party, e se são cookies de sessão ou navegação ao ver se o domínio do cookie apresenta características como "www".
-  4. Para o cálculo do score, foi ponderado o número de cookies + número de instânceas de armazenamento local / 2 + número de conexões a domínios terceiros / 3. Com este resultado multiplicado por 1000, é obtido o rating.
+  4. Para o cálculo do score, foi ponderado o número de cookies + número de instânceas de armazenamento local / 2 + número de conexões a domínios terceiros / 30. Com este resultado multiplicado por 1000, é obtido o rating.
