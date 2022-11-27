@@ -5,7 +5,7 @@ const showRating = () => {
 
     var rating = document.getElementById("rating");
 
-    var score = ((cookie_num/3) + (storage_num/2) + (domains_num)) * 1000;
+    var score = ((cookie_num) + (storage_num/2) + (domains_num/3)) * 1000;
 
     let content = document.createTextNode("Security Rating: " + score);
 
