@@ -16,6 +16,7 @@ const gettingAllCookies = (tabs) => {
         if (cookies.length > 0){
             let content = document.createTextNode(num_cookies + " cookies in this page!");
             totalcookies.appendChild(content);
+            totalcookies.setAttribute("value", num_cookies);
 
             for (let cookie of cookies){
                 let li = document.createElement("li");
